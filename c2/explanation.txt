@@ -1,0 +1,53 @@
+// client - pobaruva resurs na internet od serverot
+// server - go opsluzuva toj klient
+
+// HTTP/HTTPS
+
+// REST(Representational State Transfer) - arhitekturalni principi i granici sto ni davaat 
+standardiziran nacin na dizajniranje na aplikacii na internetot
+
+// Design patterns (Semi na dizajn) - sledat nekoi ogranicuvanja, i na koj nacin ke se organizira 
+i koristi kodot
+Vidovi semi na dizajn:
+
+    1. Singleton Patterns: 
+        - Factory Method Pattern - ke koristite glavno factory methods (nakratko objasneto)
+        - Abstract factory pattern - ke koristite glavno metodi od abstract klasi
+    2. Structural Patterns:
+        - Decorator Pattern - dinamicno zadavanje na odgovornosti na objekt
+    3. Behavioral Patterns:
+        - Observer Pattern - definira one-to-many zavisnost megu objekti taka sto stom eden objekt
+        se promeni, site zavisni na nego se izvesteni i se prilagoduvaat avtomatski
+    4. Arhitectural Patterns:
+        - MVC (Model - View - Controller) - separates application into three interconnected components
+    5. Concurency patters:
+        - Mutex Patterns - ni ovozmozuvaat ekskluziven pristap do nekoj resurs (samo odredeni korisnici
+         mozat da go koristat)
+
+// API (Application Programming Interface) - rabotata na API e da razmenuva podatoci pomegu aplikacii,
+sistemi i uredi
+API vi e kako dogovor kade sto e definirano kakva interakcija ke imaat softverskite komponenti pomegu
+sebe
+
+// RESTFUL API (koristi HTTP i gi sledi principite na REST) - ovozmozuva komunikacija na softverskite komponenti
+
+// Web servisi - komunikacija na klient/server preku internet (HTTP)
+Web servisite vi se specificna implementacija na API koja ni ovozmozuva komunikacija preku internet
+ili mreza
+
+Primer za web servis: GET, PUT, PATCH, POST, DELETE metodite  
+
+// REST koristi klient-server arhitektura
+    - Statelesness - sekoj HTTP request treba vo sebe da gi sodrzi site informacii potrebni za komunikacijata
+    klient-server da moze da go razbere i procesira istiot request
+    Vo prevod, serverot ne moze da racuna na prethodni requesti, ne gi zacuvuva prethodnite requesti.
+    Sekoj request e nezavisen i standalone
+
+    - Caching - toa e sekoj proces na zacuvuvanje i odnovo koristenj na prethodno koristena ili
+    izracunata za da se podobri efikasnosta i izvedbata na sistem.
+
+Summary: I Statelesness i caching vi se glavni koncepti vo web development.
+Statelesness ima pogolema scalabilnost i tolerancija za greski.
+Caching po default e po efikasen, megutoa podatocite sto se zacuvani (cached) mozat da zastarat I
+da napravi problem, treba poveke vnimavanje
+
