@@ -88,11 +88,11 @@ const removePerson = async (id) => {
     }
 }
 
-(async function (){
-    await removePerson(3);
-})();
+// (async function (){
+//     await removePerson(3);
+// })();
 
-//Task napravete go istovo (istite metodi koristete gi)
+//Task napravete go istovo (istite funkcii koristete gi)
 //za JSON resurs cars.json
 //car {
 // id
@@ -100,3 +100,50 @@ const removePerson = async (id) => {
 // model
 // }
 //BONUS povikajte gi so vistinska funkcija, bez IIFE
+
+const addCar = async(id, manufacturer, model) => {
+    try{
+        const person = {
+            id: id,
+            manufacturer: manufacturer,
+            model: model
+        };
+        let data = await readData("./cars");
+        data.push(person);
+        await writeData(data, "./cars");
+    }catch(err){
+        throw err;
+    }
+};
+
+const updateCar = async (id, newCarData) => {
+    try{
+        let data = await readData("./cars");
+        const car = data.find((car) => car.id == id);
+        const newCar = {   
+            ...car,  
+            ...newCarData        
+        };
+        data = data.filter((car) => car.id != id); 
+        data.push(newCar);
+        await writeData(data, "./cars");
+    }catch(err){
+        throw err;
+    }
+};
+
+const removeCar = async (id) => {
+    try {
+        const data = await readData("./cars");
+        const out = data.filter((car) => car.id !== id);
+        await writeData(out, "./cars");
+    }catch(err){
+        throw err;
+    }
+}
+
+const execute = async() => {
+    await updateCar(2, {manufacturer: "Mercedes-Benz"});
+};
+
+execute();

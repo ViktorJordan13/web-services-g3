@@ -1,0 +1,3 @@
+1. Definirajte 5 razlicni REST resursi, podatocni modeli (vo json format)
+- user.json, books.json, location.json, products.json,  cities.json
+2. Izrabotete REST API CRUD za eden od tie modeli ( koristete gi readData i writeData)
