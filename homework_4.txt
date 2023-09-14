@@ -1,0 +1,8 @@
+1. Create a model in mongoose for the homework_3
+    -let it have min 5 fields
+
+2. Create the local functions for CRUD adjusted to MongoDB
+
+3. Create Handlers (2 GET, 1 POST, 1 PATCH, 1 DELETE) for those functions and routes in index.json
+
+4. Test them in POSTMAN and prepare to demonstrate them on the next class
