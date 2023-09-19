@@ -1,0 +1,16 @@
+{
+  "name": "c5",
+  "version": "1.0.0",
+  "description": "- Utvrduvanje na avtenticnost, identitet\r     - Proces vo koj verificirame dali nekoj e toj sto tvrdi deka e.\r     Primer:\r         -Verifikacija na licnost so pokazuvanje licna karta,\r         -Najava na fb so email i lozinka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2"
+  }
+}

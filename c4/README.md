@@ -2,6 +2,7 @@ Etapi na razvoj (development stages) - toa vi se razlicni etapi od razvojot na e
 3te najvazni development stages:
 1. development
 2. integration
+*. staging (pre-production) - staging vi e egzaktna kopija od production (kako toa bi izgledalo "navistina", t.e. na production)
 3. production
 
 Authentication (Avtentikacija) - treba toj sto praka baranje(GET, POST, PUT, DELETE) da go dokaze svojot identitet (deka stvarno e toj sto toa go bara)
