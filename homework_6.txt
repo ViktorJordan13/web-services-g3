@@ -1,0 +1,22 @@
+Izrabotete monoliten servis za avtentikacija na hrana so multitenant opcii.
+Aplikacijata treba da sodrzi kornici i naracki (sekoj korisnik si ima svoi naracki)
+
+Napravete:
+1. Model
+2. Buznis logika
+3. Handlers 
+
+Napravete minimum 2 korisnika sto sekoj ke ima barem po 3 naracki
+VAZNO! - sekoja naracka vo modelot treba da go ima id-to na korisnikot
+
+Polinja za korisnikot:
+    1. First Name,
+    2. Family Name,
+    3. Birthday,
+    4. Adresa na ziveenje
+
+Polinja za narackata:
+    1. Ime na jadenjeto
+    2. Mesto od kade od kade go naracuvate jadenjeto (primer: imeto na restoranot),
+    3. Nacin na plakanje
+    4. account_id (unikatnoto id na korisnikot sto naracal)

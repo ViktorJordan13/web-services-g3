@@ -2,7 +2,7 @@ const { Validator } = require("node-input-validator");
 
 const BlogPOST = {
     title: "required|string",
-    content: "requred|string",
+    content: "required|string",
 }
 
 const BlogPUT = {
